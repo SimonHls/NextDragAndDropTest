@@ -4,9 +4,12 @@ import { RecoilRoot } from 'recoil'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <RecoilRoot>
-      <Component {...pageProps} />
-    </RecoilRoot>
+    <div className=' min-h-screen min-w-full bg-white'>
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
+    </div>
+    
   )
 }
 
